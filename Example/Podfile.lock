@@ -1,0 +1,43 @@
+PODS:
+  - JXCategoryView (1.5.6)
+  - Masonry (1.1.0)
+  - QXHome (0.1.0):
+    - JXCategoryView (~> 1.5.6)
+    - Masonry (~> 1.1.0)
+    - SDCycleScrollView (>= 1.80)
+    - YYCategories (~> 1.0.4)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - QXHome (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - JXCategoryView
+    - Masonry
+    - SDCycleScrollView
+    - SDWebImage
+    - YYCategories
+
+EXTERNAL SOURCES:
+  QXHome:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  QXHome: 6878d711c89fa79556a66dd6e6b49a3c2fb79bec
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: a119368503ff7a1e63fbf491d9cefb49bf440a42
+
+COCOAPODS: 1.10.0.beta.2

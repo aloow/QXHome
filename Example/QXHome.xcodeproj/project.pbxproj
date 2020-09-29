@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21B35596BA69169D01487975 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		31E30F94ABBFCD49D92E0C32 /* QXHome.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = QXHome.podspec; path = ../QXHome.podspec; sourceTree = "<group>"; };
+		21B35596BA69169D01487975 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		31E30F94ABBFCD49D92E0C32 /* QXHome.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = QXHome.podspec; path = ../QXHome.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3C422EED1D86576756BD89B0 /* Pods-QXHome_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QXHome_Example.release.xcconfig"; path = "Target Support Files/Pods-QXHome_Example/Pods-QXHome_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* QXHome_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QXHome_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,7 +62,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81B6E7F7A44F4E8232C90DC6 /* Pods_QXHome_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QXHome_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F135D349F5A93AEEF263E91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8F135D349F5A93AEEF263E91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		935A42A805F8B9085ADD1BCB /* Pods-QXHome_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QXHome_Tests.debug.xcconfig"; path = "Target Support Files/Pods-QXHome_Tests/Pods-QXHome_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F147CB3EBABDF88AF88D64 /* Pods-QXHome_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QXHome_Example.debug.xcconfig"; path = "Target Support Files/Pods-QXHome_Example/Pods-QXHome_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C1D1D8031BD04A602722393E /* Pods_QXHome_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QXHome_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				935A42A805F8B9085ADD1BCB /* Pods-QXHome_Tests.debug.xcconfig */,
 				CF21ECD397752180440B60C1 /* Pods-QXHome_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +346,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-QXHome_Example/Pods-QXHome_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/QXHome/QXHome.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QXHome.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

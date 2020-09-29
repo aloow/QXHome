@@ -7,6 +7,7 @@
 //
 
 #import "QXViewController.h"
+#import <QXHomeContainerController.h>
 
 @interface QXViewController ()
 
@@ -18,12 +19,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)buttonTap:(id)sender {
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[QXHomeContainerController class]];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"QXHome" bundle:bundle];
+    QXHomeContainerController *lcVC =
+    [sb instantiateViewControllerWithIdentifier:@"QXHomeContainerController"];
+ 
+    [self.navigationController pushViewController:lcVC animated:true];
+    
+//    [self presentViewController:lcVC animated:true completion:nil];
+    
 }
+
 
 @end

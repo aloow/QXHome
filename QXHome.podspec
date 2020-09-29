@@ -10,33 +10,22 @@ Pod::Spec.new do |s|
   s.name             = 'QXHome'
   s.version          = '0.1.0'
   s.summary          = 'A short description of QXHome.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Add long description of the pod here.
                        DESC
-
   s.homepage         = 'https://github.com/aloow/QXHome'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aloow' => 'xuesq@pvc123.com' }
   s.source           = { :git => 'https://github.com/aloow/QXHome.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
+  
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'QXHome/Classes/**/*'
+  s.resources = 'QXHome/Assets/*.{xcassets}'
+ 
+  s.dependency 'JXCategoryView', '~> 1.5.6' # 标签滚动
+  s.dependency 'YYCategories','~> 1.0.4'
+  s.dependency 'Masonry','~> 1.1.0'
+  s.dependency 'SDCycleScrollView','>= 1.80' # 图片、文字轮播器
   
-  # s.resource_bundles = {
-  #   'QXHome' => ['QXHome/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

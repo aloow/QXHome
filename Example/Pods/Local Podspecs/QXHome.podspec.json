@@ -1,0 +1,37 @@
+{
+  "name": "QXHome",
+  "version": "0.1.0",
+  "summary": "A short description of QXHome.",
+  "description": "Add long description of the pod here.",
+  "homepage": "https://github.com/aloow/QXHome",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "aloow": "xuesq@pvc123.com"
+  },
+  "source": {
+    "git": "https://github.com/aloow/QXHome.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "QXHome/Classes/**/*",
+  "resources": "QXHome/Assets/*.{xcassets}",
+  "dependencies": {
+    "JXCategoryView": [
+      "~> 1.5.6"
+    ],
+    "YYCategories": [
+      "~> 1.0.4"
+    ],
+    "Masonry": [
+      "~> 1.1.0"
+    ],
+    "SDCycleScrollView": [
+      ">= 1.80"
+    ]
+  }
+}
