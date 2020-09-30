@@ -6,8 +6,9 @@
 //
 
 #import "QXHomeController.h"
+#import "QXHomeWaterLayout.h"
 
-@interface QXHomeController ()<UICollectionViewDataSource>
+@interface QXHomeController ()<UICollectionViewDataSource, QXHomeWaterLayoutDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -24,15 +25,17 @@
 -(void)setupCollectionView {
     self.collectionView.dataSource = self;
     self.collectionView.contentInset = UIEdgeInsetsMake(0, 12, 0, 12);
-    UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
-    layout.itemSize = CGSizeMake((self.view.bounds.size.width - 3*10)/2, 300);
-    layout.minimumLineSpacing = 10;
-    layout.minimumInteritemSpacing = 1;
+    QXHomeWaterLayout *layout = (QXHomeWaterLayout *)self.collectionView.collectionViewLayout;
+    
+    layout.delegate = self;
+//    layout.itemSize = CGSizeMake((self.view.bounds.size.width - 3*10)/2, 300);
+//    layout.minimumLineSpacing = 10;
+//    layout.minimumInteritemSpacing = 1;
 }
 
 // MARK: - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return 32;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -44,9 +47,9 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     
-    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"QXHomeHeaderView" forIndexPath:indexPath];
-    }
+//    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+//        return [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"QXHomeHeaderView" forIndexPath:indexPath];
+//    }
     return nil;
 }
 
@@ -54,6 +57,14 @@
 
 - (UIView *)listView {
     return self.view;
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView heightForPhotoAtIndexPath:(NSIndexPath *)indexPath {
+    
+    int x = arc4random() % 2;
+    return x == 0 ? 300 : 250;
+    
 }
 
 @end

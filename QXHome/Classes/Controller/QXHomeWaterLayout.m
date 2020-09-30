@@ -39,14 +39,15 @@
     }
     
     int column = 0;
-    NSMutableArray *yOffset = [[NSMutableArray alloc] initWithArray:@[@0]
-                                                          copyItems:true];
-    
-    for (int item = 0; item < [self.collectionView numberOfItemsInSection:0]; item++) {
+    NSMutableArray *yOffset = @[].mutableCopy;
+    for (int i = 0; i < numberOfColumns; i++) {
+        [yOffset addObject:@0];
+    }
+    for (int item = 0; item < [self.collectionView numberOfItemsInSection:0]; item = item + 1) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:item inSection:0];
         
         // 拿到高度
-        CGFloat height = 70;
+        CGFloat height = [self.delegate collectionView:self.collectionView heightForPhotoAtIndexPath:indexPath];
         CGRect frame = CGRectMake([xOffset[column] floatValue],
                                    [yOffset[column] floatValue],
                                   columnWidth, height);

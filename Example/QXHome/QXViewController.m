@@ -36,4 +36,12 @@
 }
 
 
+- (IBAction)tap:(id)sender {
+    
+    int x = arc4random() % 3;
+    NSLog(@"%ld",x);
+    
+}
+
+
 @end
