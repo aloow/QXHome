@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface QXHomeHeaderView : UICollectionReusableView
-<SDCycleScrollViewDelegate, UICollectionViewDataSource>
+<SDCycleScrollViewDelegate, UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIView *topBannerContainView;
 // 新人推荐

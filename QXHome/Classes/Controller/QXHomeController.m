@@ -23,21 +23,22 @@
 
 -(void)setupCollectionView {
     self.collectionView.dataSource = self;
-    self.collectionView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    self.collectionView.contentInset = UIEdgeInsetsMake(0, 12, 0, 12);
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
-    layout.estimatedItemSize = CGSizeMake((self.view.bounds.size.width - 3*10)/2, 156);
-    layout.minimumLineSpacing = 1;
+    layout.itemSize = CGSizeMake((self.view.bounds.size.width - 3*10)/2, 300);
+    layout.minimumLineSpacing = 10;
     layout.minimumInteritemSpacing = 1;
 }
 
 // MARK: - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 0;
+    return 20;
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [UICollectionViewCell new];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"homeCellid" forIndexPath:indexPath];
+    return cell;
     
 }
 

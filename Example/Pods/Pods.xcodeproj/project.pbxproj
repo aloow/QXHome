@@ -221,6 +221,8 @@
 		8795FA9D4FD7E9CEBF969B6426E07CA9 /* YYCategoriesMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F602B9C9F956B410B03B23284FE6DF /* YYCategoriesMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		889CEC11252321CE0042499C /* QXHomeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 889CEC0F252321CE0042499C /* QXHomeController.h */; };
 		889CEC12252321CE0042499C /* QXHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889CEC10252321CE0042499C /* QXHomeController.m */; };
+		889CEC2625233AA00042499C /* QXHomeWaterLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 889CEC2425233AA00042499C /* QXHomeWaterLayout.h */; };
+		889CEC2725233AA00042499C /* QXHomeWaterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 889CEC2525233AA00042499C /* QXHomeWaterLayout.m */; };
 		88CDF53E5314E60C0DF693663122C3EE /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 884B62BF8282B3874DA24EEE44FBBC9A /* NSBundle+YYAdd.m */; };
 		89184ACBA7E356C8B6B5E8A4C508C8EC /* Pods-QXHome_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 403E805B9F7C53A02173663E2062C768 /* Pods-QXHome_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89A6ECD99DC8E2EA35C62949669077CF /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDBF46F1BB86742B1EAAFBB119DF8C4 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -688,6 +690,8 @@
 		884B62BF8282B3874DA24EEE44FBBC9A /* NSBundle+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+YYAdd.m"; path = "YYCategories/Foundation/NSBundle+YYAdd.m"; sourceTree = "<group>"; };
 		889CEC0F252321CE0042499C /* QXHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXHomeController.h; sourceTree = "<group>"; };
 		889CEC10252321CE0042499C /* QXHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXHomeController.m; sourceTree = "<group>"; };
+		889CEC2425233AA00042499C /* QXHomeWaterLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QXHomeWaterLayout.h; sourceTree = "<group>"; };
+		889CEC2525233AA00042499C /* QXHomeWaterLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QXHomeWaterLayout.m; sourceTree = "<group>"; };
 		88BD616B99CD1F838B7DB73DF63655D0 /* NSData+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+YYAdd.m"; path = "YYCategories/Foundation/NSData+YYAdd.m"; sourceTree = "<group>"; };
 		88DAD4570E2EAF7C72DA3B4174FCC708 /* JXCategoryBaseCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryBaseCell.m; path = Sources/Base/JXCategoryBaseCell.m; sourceTree = "<group>"; };
 		89E887DE59C7EB936E88EDB36D845E1F /* NSKeyedUnarchiver+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedUnarchiver+YYAdd.h"; path = "YYCategories/Foundation/NSKeyedUnarchiver+YYAdd.h"; sourceTree = "<group>"; };
@@ -1611,6 +1615,8 @@
 				8B0F6DE7FFC2B4C6640D976FAB90EEC5 /* QXHomePageController.m */,
 				38F898AFBEB3F365C8510AAF2561652C /* QXHomeHeaderView.h */,
 				5E2ABDFFCF136B15BC2B8EBCFE2C3C74 /* QXHomeHeaderView.m */,
+				889CEC2425233AA00042499C /* QXHomeWaterLayout.h */,
+				889CEC2525233AA00042499C /* QXHomeWaterLayout.m */,
 			);
 			name = Controller;
 			path = QXHome/Classes/Controller;
@@ -1794,6 +1800,7 @@
 				FABFE9C8F590B48B21966E6AD9634ECC /* QXHomeContainerController.h in Headers */,
 				889CEC11252321CE0042499C /* QXHomeController.h in Headers */,
 				3007E5BB5B51D54B43EB5656CAB33AD4 /* QXHomeHeaderView.h in Headers */,
+				889CEC2625233AA00042499C /* QXHomeWaterLayout.h in Headers */,
 				A644B606E12DE78CFE2ED12BE32B2DD5 /* QXHomePageController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2329,6 +2336,7 @@
 			files = (
 				4513824FE7D09721F2B97197A18E9130 /* QXHome-dummy.m in Sources */,
 				889CEC12252321CE0042499C /* QXHomeController.m in Sources */,
+				889CEC2725233AA00042499C /* QXHomeWaterLayout.m in Sources */,
 				4B80BE4E0826F896D2FFC57B69874CC2 /* QXHome.storyboard in Sources */,
 				241A3659DACCA6B689C86D8CFA92F7F0 /* QXHomeContainerController.m in Sources */,
 				4B721740FECC0129F798DACE4C04606A /* QXHomeHeaderView.m in Sources */,

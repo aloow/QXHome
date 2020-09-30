@@ -93,8 +93,8 @@ UICollectionViewDataSource,UICollectionViewDelegate>
     
     UICollectionViewFlowLayout *flowLayout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     
-    CGFloat itemWidth = (self.view.bounds.size.width - 5*12)/6;
-    flowLayout.estimatedItemSize = CGSizeMake(itemWidth, 45);
+    CGFloat itemWidth = (self.view.bounds.size.width - 5*12)/4;
+    flowLayout.itemSize = CGSizeMake(itemWidth, 45);
     
     flowLayout.minimumLineSpacing = 10; // 最小行间距
     flowLayout.minimumInteritemSpacing = 4; //最小元素之间的间距
