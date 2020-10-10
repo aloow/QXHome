@@ -11,8 +11,12 @@
 #endif
 
 #import "QXHomeContainerController.h"
+#import "QXHomeController.h"
 #import "QXHomeHeaderView.h"
 #import "QXHomePageController.h"
+#import "QXHomeWaterLayout.h"
+#import "QXHomeHeadView.h"
+#import "XRWaterfallLayout.h"
 
 FOUNDATION_EXPORT double QXHomeVersionNumber;
 FOUNDATION_EXPORT const unsigned char QXHomeVersionString[];
